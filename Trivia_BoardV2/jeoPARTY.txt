@@ -1,0 +1,8 @@
+Hello this is the jeoParty text
+you can use
+
+    python -m http.server
+
+in this directory to start a server
+The reason for this is to access this text file!
+Try it without the server and you will see cors errors

@@ -1,5 +1,11 @@
+
 $(function() {
-    console.log( "ready!" );
+    console.log("ready!");
+
+    $.get('jeoPARTY.txt', function(data) {
+        console.log(data);
+     }, 'text');
+
 
     $(".game-button").click(function(){
 
