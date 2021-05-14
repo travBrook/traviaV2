@@ -32,17 +32,21 @@ $(function() {
 
     console.log(map);
 
+
+    //When a game button tile is clicked ...
     $(".tile").click(function(){
+
+        //show the right clue ...
         var tileID = $(this).attr('data-tileID');
         theIDKey = tileID.split(",");
         var clue = map.get([parseInt(theIDKey[0]), parseInt(theIDKey[1])].toString());
         document.getElementById("daClue").innerHTML = clue;
-        $('div[data-tile="' + tileID + '>button"]').html("");
 
+        //and empty the button text
+        $(this).children("button.game-button").text("");
     })
 
     $(".game-button").click(function(){
-
         $(".board").toggle();
         $(".clue").toggle();
     });
