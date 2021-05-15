@@ -29,10 +29,6 @@ $(function() {
 
     }, 'text');   
 
-
-    console.log(map);
-
-
     //When a game button tile is clicked ...
     $(".tile").click(function(){
 
@@ -47,13 +43,13 @@ $(function() {
     })
 
     $(".game-button").click(function(){
-        $(".board").toggle();
+        $("#board").toggle();
         $(".clue").toggle();
     });
 
     $(".clue").click(function(){
 
-        $(".board").toggle();
+        $("#board").toggle();
         $(".clue").toggle();
     });
 
